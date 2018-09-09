@@ -1,0 +1,87 @@
+
+@media screen and (min-width:320px) {
+
+  body {
+    padding: 40px;
+  }
+
+  .banner-greetings,
+  .section-title {
+    font-size: 42px;
+  }
+
+  .section-title {
+    line-height: 1.1;
+  }
+
+  .banner-title h2 {
+    text-align: center;
+  }
+
+  .albums,
+  .work-list,
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .albums {
+    padding-bottom: 35px;
+  }
+
+  .album,
+  .album-thumbnail {
+    padding-bottom: 10px;
+  }
+
+  .banner-title h2 {
+    font-size: 24px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 35px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+
+  .work-list,
+  .albums,
+  .grid  {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-item:nth-child(3){
+    display: grid;
+    grid-column: 1 / -1;
+  }
+}
+
+
+@media screen and (min-width: 768px){
+  body {
+    padding: 50px;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+  .albums {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .work-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 72px;
+  }
+}
